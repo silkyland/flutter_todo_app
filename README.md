@@ -1,8 +1,10 @@
 # Todo Application
 
-![alt todolist](https://github.com/silkyland/flutter_todo_app/raw/master/howto/images/todo.png =480x)
-
 ตัวอย่างการเขียน Application TODO ด้วย Flutter.
+
+<img src="https://github.com/silkyland/flutter_todo_app/raw/master/howto/images/todo.png" width="480"/>
+
+
 ### สร้างโปรเจค
 
 1. สร้างโปรเจคใหม่โดยไปที่เมนู View > Command Palette
