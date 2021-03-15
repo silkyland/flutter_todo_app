@@ -1,6 +1,6 @@
 # Todo Application
 
-:::image type="content" source="howto/images/todo.png" alt-text="Easy todo list":::
+![alt todolist](https://github.com/silkyland/flutter_todo_app/raw/master/howto/images/todo.png =480x)
 
 ตัวอย่างการเขียน Application TODO ด้วย Flutter.
 ### สร้างโปรเจค
