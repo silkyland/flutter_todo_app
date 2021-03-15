@@ -4,8 +4,8 @@
 
 <img src="https://github.com/silkyland/flutter_todo_app/raw/master/howto/images/todo.png" width="480"/>
 
-
 ---
+
 ### สร้างโปรเจค
 
 1. สร้างโปรเจคใหม่โดยไปที่เมนู View > Command Palette
@@ -41,7 +41,11 @@ class _HomeScreenState extends State<HomeScreen> {
 }
 ```
 
-- ที่ไฟล์ lib/main.dart ให้ตั้งค่า MyApp ส่วนของ MaterialApp เปลี่ยน ```home:``` ให้เป็น  HomeScreen แล้ว Import screen/home_screen.dart
+---
+
+## ไฟล์ lib/main.dart
+
+- ให้ตั้งค่า MyApp ส่วนของ MaterialApp เปลี่ยน `home:` ให้เป็น HomeScreen แล้ว Import screen/home_screen.dart
 
 ```dart
 void main() {
@@ -61,4 +65,60 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
--
+
+---
+
+## ไฟล์ lib/screens/home_screen.dart
+
+- เพิ่ม `Scaffold()` และ `appbar:`
+
+```dart
+    Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "Todo list",
+        ),
+      ),
+    )
+```
+
+- ใน `Scaffold()` เพิ่ม `body:`
+
+```dart
+    Scaffold(
+        body: Container(
+          child: Column(
+            children: [],
+          ),
+        ),
+    ),
+```
+
+- เพิ่มส่วน `Form()`
+
+```dart
+    ...
+          child: Column(
+            children: [
+                Form(
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    hintText: "รายการสิ่งที่ต้องทำ",
+                    border: OutlineInputBorder(),
+                    suffixIcon: Padding(
+                      padding: const EdgeInsetsDirectional.only(end: 12.0),
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.list,
+                          color: Colors.blue,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+    ...
+```

@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         Icons.list,
                         color: Colors.blue,
                       ),
-                    ), // myIcon is a 48px-wide widget.
+                    ),
                   ),
                 ),
               ),
