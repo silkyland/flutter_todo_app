@@ -38,30 +38,23 @@ class _HomeScreenState extends State<HomeScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Form(
-              child: Row(
-                children: [
-                  Flexible(
-                    flex: 3,
-                    child: TextFormField(
-                      controller: input,
-                      onFieldSubmitted: (s) => handleAddTolist(),
-                      decoration: InputDecoration(
-                        hintText: "รายการสิ่งที่ต้องทำ",
-                        border: OutlineInputBorder(),
-                        suffixIcon: Padding(
-                          padding: const EdgeInsetsDirectional.only(end: 12.0),
-                          child: IconButton(
-                            onPressed: handleAddTolist,
-                            icon: Icon(
-                              Icons.list,
-                              color: Colors.blue,
-                            ),
-                          ), // myIcon is a 48px-wide widget.
-                        ),
+              child: TextFormField(
+                controller: input,
+                onFieldSubmitted: (s) => handleAddTolist(),
+                decoration: InputDecoration(
+                  hintText: "รายการสิ่งที่ต้องทำ",
+                  border: OutlineInputBorder(),
+                  suffixIcon: Padding(
+                    padding: const EdgeInsetsDirectional.only(end: 12.0),
+                    child: IconButton(
+                      onPressed: handleAddTolist,
+                      icon: Icon(
+                        Icons.list,
+                        color: Colors.blue,
                       ),
-                    ),
+                    ), // myIcon is a 48px-wide widget.
                   ),
-                ],
+                ),
               ),
             ),
             SizedBox(

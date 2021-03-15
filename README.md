@@ -5,12 +5,17 @@
 <img src="https://github.com/silkyland/flutter_todo_app/raw/master/howto/images/todo.png" width="480"/>
 
 
+---
 ### สร้างโปรเจค
 
 1. สร้างโปรเจคใหม่โดยไปที่เมนู View > Command Palette
 2. เลือก Flutter: New Application Project
 3. เลือกโฟล์เดอร์ที่เก็บ Project เช่น d:/flutterProj
 4. ตั้งชื่อโปรเจคว่า todo
+
+### Design Layouy
+
+<img src="https://github.com/silkyland/flutter_todo_app/raw/master/howto/images/flutter_layout.png" width="720"/>
 
 ### เริ่มโปรเจค
 
