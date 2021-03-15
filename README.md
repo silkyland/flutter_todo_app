@@ -188,23 +188,28 @@ class MyApp extends StatelessWidget {
 สร้าง `void()` method ชื่อว่า `handleAddToList()` สำหรับเพิ่มข้อมูลที่ผู้ใช้กรอกเข้าไปยังตัวแปร `todos`
 
 ```dart
+...
     void handleAddTolist() {
       setState(() {
         todos.add(input.text);
         input.text = "";
       });
     }
+
+....
 ```
 
 สร้าง `void()` method ชื่อว่า `handleRemoveTodoFromList(String item)` โดยรับค่า `String item` สำหรับลบข้อมูลที่ผู้ใช้เลือกออกจากตัวแปร `todos`
 
 ```dart
 ...
+
   void handleRemoveTodoFromList(String item) {
     setState(() {
       todos.remove(item);
     });
   }
+
 ....
 ```
 
