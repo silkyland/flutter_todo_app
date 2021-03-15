@@ -310,11 +310,11 @@ body: Container(
 ```dart
 ...
 
-Form(),
+Form( ... ),
 SizedBox(
   height: 10,
 ),
-Text(),
+Text( ... ),
 
 ...
 ```
@@ -352,3 +352,9 @@ Text(),
 ```
 ลอง Run โดยการกดปุ่ม `F5` บนแป้นพิมพ์
 
+### Credit
+Bundit Nuntates
+
+----
+### License
+MIT
