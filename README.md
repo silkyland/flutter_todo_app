@@ -328,33 +328,39 @@ Text( ... ),
 ```dart
     Expanded(
       child: ListView(
-        children: [
-          Card(
-            child: Container(
-              padding: EdgeInsets.all(10),
+      children: todos
+          .map(
+            (item) => Card(
               child: Container(
                 padding: EdgeInsets.all(10),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text("รายการทดสอบ"),
-                    IconButton(
-                      onPressed: () {},
-                      icon: Icon(
-                        Icons.delete,
-                        color: Colors.red,
-                      ),
-                    )
-                  ],
+                child: Container(
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("$item"),
+                      IconButton(
+                        onPressed: () {
+                          handleRemoveTodoFromList(item);
+                        },
+                        icon: Icon(
+                          Icons.delete,
+                          color: Colors.red,
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),
-          ),
-        ],
+          )
+          .toList(),
       ),
     ),
 
 ```
+
+
 ลอง Run โดยการกดปุ่ม `F5` บนแป้นพิมพ์
 
 ### Credit
